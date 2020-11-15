@@ -1,3 +1,5 @@
+require "open-uri"
+
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all
@@ -19,6 +21,12 @@ class CocktailsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
+    redirect_to cocktails_path
   end
 
   private
