@@ -1,1 +1,24 @@
 // Specific CSS for your home-page
+.home-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#logo-wrapper {
+  white-space: nowrap;
+}
+
+#logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+#tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
